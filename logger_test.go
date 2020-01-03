@@ -1,11 +1,12 @@
 package main
 
 import (
-	"github.com/go-logr/stdr"
-	"github.com/stretchr/testify/assert"
 	stdlog "log"
 	"strings"
 	"testing"
+
+	"github.com/go-logr/stdr"
+	"github.com/stretchr/testify/assert"
 )
 
 type testLogStruct struct {

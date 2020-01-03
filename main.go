@@ -3,10 +3,17 @@ package main
 import (
 	"fmt"
 	"log"
+	"net/http"
+	"time"
 )
 
 func main() {
-	adder()
+	//adder()
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		time.Sleep(3 * time.Second)
+		fmt.Fprintf(w, "Hello, %s!", r.URL.Path[1:])
+	})
+	http.ListenAndServe(":8080", nil)
 }
 
 func adder() {
