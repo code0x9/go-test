@@ -71,7 +71,7 @@ func TestTokenizer(t *testing.T) {
             </p>
             <ul class="menu-list">
               <li>
-                <a href="https://git.linecorp.com/nucleo/niam" target="_blank"
+                <a href="https://GITTTTTTTTT/nucleo/niam" target="_blank"
                   ><i class="fab fa-github"></i><span> GitHub</span></a
                 >
               </li>
