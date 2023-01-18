@@ -128,10 +128,10 @@ func TestTokenizer(t *testing.T) {
 
 	for {
 		token := body.Next()
-		switch {
-		case token == html.ErrorToken:
-			break
-		case token == html.TextToken:
+		switch token {
+		case html.ErrorToken:
+			return
+		case html.TextToken:
 			content := strings.TrimSpace(html.UnescapeString(string(body.Text())))
 			if len(content) == 0 {
 				continue
