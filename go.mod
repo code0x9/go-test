@@ -1,12 +1,12 @@
 module github.com/code0x9/go-test
 
-go 1.23
+go 1.23.0
 
 require (
 	github.com/go-logr/stdr v1.2.2
 	github.com/stretchr/testify v1.10.0
 	github.com/thoas/go-funk v0.9.3
-	golang.org/x/net v0.33.0
+	golang.org/x/net v0.37.0
 )
 
 require (
