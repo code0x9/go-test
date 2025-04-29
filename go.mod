@@ -6,7 +6,7 @@ require (
 	github.com/go-logr/stdr v1.2.2
 	github.com/stretchr/testify v1.10.0
 	github.com/thoas/go-funk v0.9.3
-	golang.org/x/net v0.37.0
+	golang.org/x/net v0.39.0
 )
 
 require (
