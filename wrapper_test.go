@@ -6,7 +6,7 @@ import (
 )
 
 func ExampleNormalTask() {
-	err := taskWrapper(normalTask)
+	err := taskWrapper(NormalTask)
 	if err != nil {
 		log.Println(err)
 	}
@@ -17,7 +17,7 @@ func ExampleNormalTask() {
 }
 
 func ExampleFailingTask() {
-	err := taskWrapper(failingTask)
+	err := taskWrapper(FailingTask)
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -37,12 +37,12 @@ func taskWrapper(task func() error) error {
 	return task()
 }
 
-func normalTask() error {
+func NormalTask() error {
 	fmt.Println("... Running Task ...")
 	return nil
 }
 
-func failingTask() error {
+func FailingTask() error {
 	fmt.Println("... Task Failure ...")
 	return fmt.Errorf("TASK ERROR")
 }
